@@ -9,7 +9,7 @@ import {DescriptionTitle} from "@/components/descriptionTitle";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-[#424242]">
       <NavBar/>
       <DescriptionTitle/>
       <Description/>
