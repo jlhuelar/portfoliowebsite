@@ -35,7 +35,7 @@ function ProjectCard({ title, year, languages, description, imageSrc }: ProjectC
         </div>
       </div>
     </div>
-  );
+  ); 
 }
 
 export function Projects() {

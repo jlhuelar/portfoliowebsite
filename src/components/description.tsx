@@ -4,7 +4,7 @@ export function Description() {
             <div className="md:w-1/3 flex justify-center md:justify-center mb-4 md:mb-0">
                 <div className="w-48 h-48 bg-gray-300 rounded-full overflow-hidden flex justify-center items-center">
                     {/* Placeholder for photo */}
-                    <img src="path/to/your/photo.jpg" alt="Jericho" className="object-cover w-full h-full" />
+                    <img src="images/leeamhair.png" alt="Jericho" className="object-cover w-full h-full" />
                 </div>
             </div>
             <div className="text-center md:text-left md:flex-grow flex flex-col justify-center items-center md:items-start">

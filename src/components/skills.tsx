@@ -18,8 +18,9 @@ export function Skills() {
             <SkillCard name="Python" imageSrc="/images/Python.png" customClass="bg-[#e1cb8a]" />
             <SkillCard name="Java" imageSrc="/images/java.png" customClass="bg-[#e1cb8a]" />
             <SkillCard name="Go" imageSrc="/images/Go.png" customClass="bg-[#e1cb8a]" />
-            <SkillCard name="C++" imageSrc="/images/C_Logo.png" customClass="bg-[#e1cb8a]" />
-            <SkillCard name="RISC-V" imageSrc="/images/asm.png" customClass="bg-[#e1cb8a]" />
+            <SkillCard name="C" imageSrc="/images/C_Logo.png" customClass="bg-[#e1cb8a]" />
+            <SkillCard name="C++" imageSrc="/images/C++.png" customClass="bg-[#e1cb8a]" />
+            <SkillCard name="RISC-V" imageSrc="/images/RISCV.png" customClass="bg-[#e1cb8a]" />
           </div>
 
           <h2 className="text-2xl bg-clip-text text-transparent bg-gradient-to-r from-[#C8AA6E] to-[#1D428A] font-bold italic mt-4">Libraries/Frameworks</h2>
@@ -50,8 +51,8 @@ export function Skills() {
             <SkillCard name="PostgreSQL" imageSrc="/images/postgres.png" customClass="bg-[#4d6372]" />
             <SkillCard name="Encore" imageSrc="/images/Encore.png" customClass="bg-[#4d6372]" />
             <SkillCard name="Baselime" imageSrc="/images/Baselime.png" customClass="bg-[#4d6372]" />
-            {/* <SkillCard name="Jupyter" imageSrc="/images/883px-Jupyter_logo.svg.png" customClass="bg-[#e86a7a]" /> */}
-            {/* <SkillCard name="Photoshop" imageSrc="/images/Adobe-Photoshop-Logo-2019-2020.png" customClass="bg-[#e86a7a]" /> */}
+            <SkillCard name="Postman" imageSrc="/images/Postman.png" customClass="bg-[#4d6372]" />
+            
 
 
           </div>
