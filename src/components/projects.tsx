@@ -49,14 +49,14 @@ export function Projects() {
             year="2024"
             languages={['C++']}
             description="In a team of 3, created a flight management program that manages and tracks the information of indivduals on an airplane. The information provided includes their names, seat number and letter which can be changed."
-            imageSrc="/images/WIP.jpg"
+            imageSrc="/images/flightmangement.jpg"
           />
           <ProjectCard 
             title="Disaster Relief Program"
             year="2024"
             languages={['Java, SQL']}
             description="Created a Disaster relief system where information about individuals is tracked following natural disasters."
-            imageSrc="/images/cgc.png"
+            imageSrc="/images/disasterrelief.png"
           />
         </div>
         
@@ -69,7 +69,7 @@ export function Projects() {
             year="2024"
             languages={['HTML','CSS','Javascript', 'React', 'Python']}
             description="Developed a dynamic and interactive E-commerce Website where users can engage through the listed products."
-            imageSrc="/images/SelfCheckoutStation.png"
+            imageSrc="/images/ecommercewebsite.png"
           />
           <ProjectCard 
             title="WSBenchMarks - In Progress"
