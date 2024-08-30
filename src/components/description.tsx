@@ -26,7 +26,7 @@ export function Description() {
         <div className="grid items-center justify-center w-full max-w-[1300px] lg:h-[50vh] md:h-[60vh] h-full pb-2 px-6 mx-auto md:grid-cols-3 gap-4">
         <div className="flex justify-center mt-8 md:mt-0 md:col-span-1">
             <img
-              src="/images/leeamhair.png"
+              src="/images/jericho.jpg"
               alt="Personal Photo"
               className="w-64 h-64 rounded-full object-cover object-[center top] scale-110 shadow-lg"
             />
