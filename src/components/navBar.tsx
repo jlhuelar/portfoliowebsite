@@ -1,17 +1,32 @@
 'use client'
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
+// opacity-35
   return (
-    <nav className="bg-[#424242]/80 h-20 flex justify-center items-center sticky top-0 z-[999]">
-      <div className="flex justify-between items-center w-full max-w-[1300px] mx-auto px-6 md:px-12">
+    <nav className={`sticky top-0 z-[999] h-20 flex justify-center items-center transition-all duration-300 ${isScrolled ? "bg-[#131313] shadow-lg backdrop-blur-sm backdrop-opacity-15 rounded-xl w-2/3 mx-auto top-5":"bg-[#424242] backdrop-blur-sm  "}`}>
+      
+      <div className="flex justify-between items-center w-full max-w-[1300px] mx-auto px-6 md:px-12 opacity-100">
         <a href="/" id="navbar__logo" className="text-[24px] sm:text-[28px] md:text-[32px] bg-clip-text text-transparent bg-gradient-to-t from-[#C8AA6E] to-[#1D428A] flex items-center cursor-pointer">
           <i className="fas fa-gem mr-2"></i>Jericho Huelar
         </a>
