@@ -5,20 +5,19 @@ import {Projects} from "@/components/projects";
 import {Footer} from "@/components/footer";
 import {ProjectsTitle} from "@/components/projectsTitle";
 import {SkillsTitle} from "@/components/skillsTitle";
-import {DescriptionTitle} from "@/components/descriptionTitle";
 
 export default function Home() {
   return (
-    <div className="bg-[#424242]">
+    <div className="bg-[#333333]">
       <NavBar/>
-      <DescriptionTitle/>
-      <Description/>
-      <SkillsTitle/>
-      <Skills/>
-      <ProjectsTitle/>
-      <Projects/>
-      <Footer/>
-      
+      <div className="overflow-auto overflow-x-hidden container mx-auto flex-1 p-4">
+        <Description/>
+        <SkillsTitle/>
+        <Skills/>
+        <ProjectsTitle/>
+        <Projects/>
+        <Footer/>
+      </div>
     </div>
   );
 }
