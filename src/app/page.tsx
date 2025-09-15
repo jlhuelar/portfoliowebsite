@@ -8,9 +8,9 @@ import {SkillsTitle} from "@/components/skillsTitle";
 
 export default function Home() {
   return (
-    <div className="bg-[#333333]">
+    <div className="bg-[#121212]">
       <NavBar/>
-      <div className="overflow-auto overflow-x-hidden container mx-auto flex-1 p-4">
+      <div className="overflow-auto overflow-x-hidden container mx-auto flex-1 p-10">
         <Description/>
         <SkillsTitle/>
         <Skills/>

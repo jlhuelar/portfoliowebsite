@@ -27,7 +27,7 @@ export function NavBar() {
     <nav className={`sticky top-0 z-[999] h-20 flex justify-center items-center transition-all duration-300 ${isScrolled ? "bg-[#131313] shadow-lg backdrop-blur-sm backdrop-opacity-15 rounded-xl w-2/3 mx-auto top-5 bg-opacity-40":"backdrop-blur-sm"}`}>
       <div className="flex justify-between items-center w-full max-w-[1300px] mx-auto px-6 md:px-12">
         <a href="/" id="navbar__logo" className="text-[24px] sm:text-[28px] md:text-[32px] bg-clip-text text-transparent bg-white flex items-center cursor-pointer">
-          <i className="fas fa-gem mr-2"></i>Jericho Huelar
+          <i className="fas fa-gem mr-2"></i>JH
         </a>
         <div id="mobile-menu" onClick={toggleMenu} className="flex flex-col justify-between h-5 cursor-pointer md:hidden">
           <span className={`block w-6 h-[2px] bg-white transition-transform ${isMenuOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>

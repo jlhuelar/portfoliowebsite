@@ -17,10 +17,8 @@ export function Skills() {
             <SkillCard name="SQL" imageSrc="/images/SQL.png" customClass="bg-[#e1cb8a]" />
             <SkillCard name="Python" imageSrc="/images/Python.png" customClass="bg-[#e1cb8a]" />
             <SkillCard name="Java" imageSrc="/images/java.png" customClass="bg-[#e1cb8a]" />
-            <SkillCard name="Go" imageSrc="/images/Go.png" customClass="bg-[#e1cb8a]" />
             <SkillCard name="C" imageSrc="/images/C_Logo.png" customClass="bg-[#e1cb8a]" />
             <SkillCard name="C++" imageSrc="/images/C++.png" customClass="bg-[#e1cb8a]" />
-            <SkillCard name="RISC-V" imageSrc="/images/RISCV.png" customClass="bg-[#e1cb8a]" />
           </div>
 
           <h2 className="text-2xl bg-clip-text text-transparent bg-gradient-to-r from-[#C8AA6E] to-[#1D428A] font-bold italic mt-4">Libraries/Frameworks</h2>
@@ -52,9 +50,7 @@ export function Skills() {
             <SkillCard name="Encore" imageSrc="/images/Encore.png" customClass="bg-[#4d6372]" />
             <SkillCard name="Baselime" imageSrc="/images/Baselime.png" customClass="bg-[#4d6372]" />
             <SkillCard name="Postman" imageSrc="/images/Postman.png" customClass="bg-[#4d6372]" />
-            
-
-
+        
           </div>
         </div>
       </div>
@@ -66,7 +62,7 @@ function SkillCard({ name, imageSrc, customClass, imgClass = "" }: { name: strin
   return (
     <div className={`relative flex items-center justify-center h-[70px] w-[70px] md:h-[90px] md:w-[90px] ${customClass} rounded-lg`}>
       <img src={imageSrc} alt={`${name} Logo`} className={`w-10 h-10 md:w-14 md:h-14 object-contain ${imgClass}`} />
-      <div className="absolute inset-0 flex items-center justify-center backdrop-filter backdrop-blur-sm opacity-0 hover:opacity-100 transition-opacity duration-300">
+      <div className="absolute inset-0 flex items-center justify-center backdrop-filter backdrop-blur-sm opacity-0 hover:opacity-100 rounded-lg transition-opacity duration-300">
         <span className="text-black font-bold text-xs md:text-sm">{name}</span>
       </div>
     </div>
