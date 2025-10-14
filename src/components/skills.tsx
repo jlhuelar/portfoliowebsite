@@ -5,8 +5,8 @@ import React from 'react';
 
 export function Skills() {
   return (
-    <div className="bg-[#222323] pb-4" id="skills">
-      <div className="bg-[#222323] flex justify-center items-center pb-8">
+    <div className="pb-4" id="skills">
+      <div className="flex justify-center items-center pb-8">
         <div className="w-full max-w-[1300px] p-4 flex flex-col items-center">
         <h2 className="text-2xl bg-clip-text text-transparent bg-gradient-to-r from-[#C8AA6E] to-[#1D428A] font-bold italic mt-4">Languages</h2>
         <div className="flex flex-wrap justify-center mt-4 gap-2 pb-4">
@@ -40,7 +40,6 @@ export function Skills() {
 
           <h2 className="text-2xl bg-clip-text text-transparent bg-gradient-to-r from-[#C8AA6E] to-[#1D428A] font-bold italic mt-4">Software Programs</h2>
           <div className="flex flex-wrap justify-center mt-4 gap-2">
-
             <SkillCard name="Bash" imageSrc="/images/Bash.png" customClass="bg-[#4d6372]" />
             <SkillCard name="Linux" imageSrc="/images/Linux.png" customClass="bg-[#4d6372]" />
             <SkillCard name="Vercel" imageSrc="/images/Vercel.png" customClass="bg-[#4d6372]" />
