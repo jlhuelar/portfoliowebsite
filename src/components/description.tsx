@@ -52,8 +52,8 @@ export function Description() {
           </div>
           <div className="md:col-span-3 pt-10 text-lg">
             <p className="pb-8">
-              I am a 4th year Software Engineering Student at the University of Calgary. My passions for from a young age sparked my interest in the different and interesting mechanics, visuals, and systems, software applications like video games offers. 
-              With that, I chose software engineering and development as it allows me to explore and use software to create innovative and user-centered solutions whether its a full stack web application, video games or even more. 
+              I am a 4th year Software Engineering Student at the University of Calgary. My software passions came from a young age, when video games sparked my interest in the different and interesting mechanics, visuals, and systems.
+              With that, I pursued software engineering and development as it allows me to explore and use software to create innovative and interesting projects whether its a full stack web application, video games or even more. 
               I&apos;m commited to continous growth technically and personally, always seeking opportunties to improve.
             </p>
             <p className="pb-8 flex justify-center">
