@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <div className="bg-[#121212]">
       <NavBar/>
+      <Description/>
       <div className="overflow-auto overflow-x-hidden container mx-auto flex-1 p-10">
-        <Description/>
         <SkillsTitle/>
         <Skills/>
         <ProjectsTitle/>
