@@ -93,6 +93,49 @@ export function Description() {
               loading="lazy">
             </iframe>
           </div>
+<<<<<<< HEAD
+=======
+          <div className="md:col-span-3 pt-10 text-lg">
+            <p className="pb-8">
+              I am a 4th year Software Engineering Student at the University of Calgary. My software passions came from a young age, when video games sparked my interest in the different and interesting mechanics, visuals, and systems.
+              With that, I pursued software engineering and development as it allows me to explore and use software to create innovative and interesting projects whether its a full stack web application, video games or even more. 
+              I&apos;m commited to continous growth technically and personally, always seeking opportunties to improve.
+            </p>
+            <p className="pb-8 flex justify-center">
+              Learn more about me below! 😊
+            </p>
+          </div>
+          <iframe 
+            data-testid="embed-iframe" 
+            style={{ borderRadius: "12px"}} 
+            src="https://open.spotify.com/embed/track/4AQSA9Do6uF4a1XkLNok6d?utm_source=generator&theme=0" 
+            width="100%" 
+            height="152" 
+            frameBorder="0" 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy">
+          </iframe>
+          <iframe 
+            data-testid="embed-iframe" 
+            style={{ borderRadius: "12px"}}  
+            src="https://open.spotify.com/embed/track/3Naqjihn2GJjOBZNeenivP?utm_source=generator&theme=0" 
+            width="100%" 
+            height="152" 
+            frameBorder="0" 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy">
+          </iframe>
+          <iframe 
+            data-testid="embed-iframe" 
+            style={{ borderRadius: "12px"}}  
+            src="https://open.spotify.com/embed/track/6phkEy1YzAK1JWZWgwC36v?utm_source=generator&theme=0" 
+            width="100%" 
+            height="152" 
+            frameBorder="0" 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy">
+          </iframe> 
+>>>>>>> 77e92d81dbfe82981fd8ffae452a1f2140779a0a
         </div>
       </div>
     );

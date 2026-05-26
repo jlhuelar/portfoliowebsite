@@ -82,7 +82,7 @@ export function Projects() {
       year: "2025",
       languages: ['Next.JS, Typescript'],
       description: "Company website that I co-founded with friends as a student-led software web development team for individuals, clubs, and businesses.",
-      imageSrc: "/images/NullusWebsite.png"
+      imageSrc: "/images/Nullus.png"
     },
     // Add more projects here
   ];
