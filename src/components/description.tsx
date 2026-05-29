@@ -2,13 +2,13 @@
 export function Description() {
     return (
       <div className="bg-white dark:bg-[#121212]">
-        <div className="min-h-[calc(100vh-5rem)] flex items-center px-4">
-          <div className="grid items-center w-full max-w-[1300px] mx-auto px-6 md:grid-cols-3 gap-4">
+        <div className="min-h-[calc(100vh-5rem)] flex items-center">
+          <div className="grid items-center w-full max-w-[1100px] mx-auto px-8 md:grid-cols-3 gap-x-2 gap-y-4">
             <div className="md:col-span-2 text-center md:text-left pb-4">
-              <h2 className="mt-2 text-4xl pb-4 font-bold text-transparent bg-clip-text text-gray-900 dark:text-white md:text-5xl">
+              <h2 className="mt-2 text-4xl pb-4 font-bold text-gray-900 dark:text-white md:text-5xl">
                 Hi 👋
               </h2>
-              <p className="mt-2 text-4xl pb-6 font-bold text-transparent text-gray-900 dark:text-white bg-clip-text md:text-5xl">
+              <p className="text-4xl pb-4 font-bold text-gray-900 dark:text-white md:text-5xl">
                 I&apos;m Jericho Huelar
               </p>
               <p className="mt-2 text-lg pb-4 font-semibold text-gray-900 dark:text-white leading-relaxed md:text-xl">
@@ -21,14 +21,7 @@ export function Description() {
                 Software Engineering Student
               </p>
               <div className="flex items-center">
-                <a href="https://www.instagram.com/jeric_lyle/">
-                    <img
-                      src="/images/instagram.png"
-                      alt="Instagram Logo"
-                      className="h-10"
-                    />
-                </a>
-                <a className="px-5" href="https://www.linkedin.com/in/jericho-huelar-112a04301/">
+                <a className="pr-5" href="https://www.linkedin.com/in/jericho-huelar-112a04301/">
                   <img
                       src="/images/LinkedIn.png"
                       alt="Linkedin Logo"
@@ -50,16 +43,6 @@ export function Description() {
                 alt="Personal Photo"
                 className="w-64 h-100 rounded-xl object-cover object-[center top] scale-110 shadow-lg"
               />
-            </div>
-            <div className="md:col-span-3 pt-10 text-lg">
-              <p className="pb-8 text-gray-900 dark:text-white">
-                I am a 4th year Software Engineering Student at the University of Calgary. My passions for from a young age sparked my interest in the different and interesting mechanics, visuals, and systems, software applications like video games offers.
-                With that, I chose software engineering and development as it allows me to explore and use software to create innovative and user-centered solutions whether its a full stack web application, video games or even more.
-                I&apos;m commited to continous growth technically and personally, always seeking opportunties to improve.
-              </p>
-              <p className="pb-8 flex justify-center text-gray-900 dark:text-white">
-                Learn more about me below! 😊
-              </p>
             </div>
           </div>
         </div>
