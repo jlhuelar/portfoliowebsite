@@ -5,7 +5,7 @@ export function SkillsTitle(){
         <div id="aboutpage">
         <div className="pb-6 pt-12">
           <div className="flex items-center justify-center">
-            <h1 className="mx-4 text-3xl font-semibold text-center text-white md:text-4xl">
+            <h1 className="mx-4 text-3xl font-semibold text-center text-gray-900 dark:text-white md:text-4xl">
               Skills
             </h1>
           </div>

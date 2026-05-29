@@ -12,15 +12,13 @@ interface ProjectCardProps {
 
 function ProjectCard({ title, year, languages, description, imageSrc }: ProjectCardProps) {
   return (
-    <div className="w-full lg:w-[45%] bg-[#222323] rounded-lg flex flex-col p-4 pb-4">
-      {/* Title and Year above the image */}
+    <div className="w-full lg:w-[45%] bg-gray-100 dark:bg-[#222323] rounded-lg flex flex-col p-4 pb-4">
       <h1 className="text-xl md:text-2xl font-bold italic bg-gradient-to-r from-[#C8AA6E] to-[#1D428A] bg-clip-text text-transparent mb-4 flex justify-between items-center">
         <span>{title}</span>
-        <span className="text-lg text-white">{year}</span>
+        <span className="text-lg text-gray-900 dark:text-white">{year}</span>
       </h1>
 
-      {/* Image */}
-      <div className="bg-[#222323] w-full mb-4 rounded-lg">
+      <div className="bg-gray-100 dark:bg-[#222323] w-full mb-4 rounded-lg">
         <img
           src={imageSrc}
           alt={title}
@@ -28,13 +26,12 @@ function ProjectCard({ title, year, languages, description, imageSrc }: ProjectC
         />
       </div>
 
-      {/* Text Below the Image */}
-      <div className="text-white mt-4">
+      <div className="text-gray-900 dark:text-white mt-4">
         <p className="font-bold text-lg">Tech Stack: <span className="font-normal">{languages.join(', ')}</span></p>
         <p className="mt-2">{description}</p>
       </div>
     </div>
-  ); 
+  );
 }
 
 interface Project {
@@ -45,7 +42,6 @@ interface Project {
   imageSrc: string;
 }
 
-// Smart ProjectsGrid that maintains your exact spacing and layout
 function ProjectsGrid({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex flex-col lg:flex-row flex-wrap w-full justify-between gap-y-24">
@@ -84,11 +80,10 @@ export function Projects() {
       description: "Company website that I co-founded with friends as a student-led software web development team for individuals, clubs, and businesses.",
       imageSrc: "/images/Nullus.png"
     },
-    // Add more projects here
   ];
 
   return (
-    <div className="bg-[#121212]" id="projects">
+    <div className="bg-white dark:bg-[#121212]" id="projects">
       <div className="mx-auto max-w-[1300px] h-auto p-4 flex flex-col justify-center items-center">
         <ProjectsGrid>
           {projects.map((project, index) => (

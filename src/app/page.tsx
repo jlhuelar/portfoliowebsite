@@ -8,7 +8,7 @@ import {SkillsTitle} from "@/components/skillsTitle";
 
 export default function Home() {
   return (
-    <div className="bg-[#121212]">
+    <div className="bg-white dark:bg-[#121212]">
       <NavBar/>
       <Description/>
       <div className="overflow-auto overflow-x-hidden container mx-auto flex-1 p-10">
