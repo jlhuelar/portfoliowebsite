@@ -86,9 +86,9 @@ export function NavBar() {
             <li key={item.sectionId} className="h-20">
               <a
                 href={item.href}
-                className={`flex items-center justify-center px-2 sm:px-4 h-full transition-colors duration-300 hover:text-[#f77062] dark:hover:text-[#f77062] ${activeSection === item.sectionId ? 'text-[#f77062] dark:text-[#f77062]' : 'text-gray-900 dark:text-white'}`}
+                className={`flex items-center justify-center px-2 sm:px-4 h-full transition-colors duration-300 hover:text-gray-600 dark:hover:text-gray-400 ${activeSection === item.sectionId ? 'text-gray-600 dark:text-gray-400' : 'text-gray-900 dark:text-white'}`}
               >
-                <span className={`border-b-2 transition-colors duration-300 ${activeSection === item.sectionId ? 'border-[#f77062]' : 'border-transparent'}`}>
+                <span className={`border-b-2 transition-colors duration-300 ${activeSection === item.sectionId ? 'border-gray-600 dark:border-gray-400' : 'border-transparent'}`}>
                   {item.label}
                 </span>
               </a>
