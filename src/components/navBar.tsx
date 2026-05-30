@@ -26,7 +26,7 @@ export function NavBar() {
   };
 
   return (
-    <nav className={`sticky top-0 z-[999] h-20 flex justify-center items-center transition-all duration-300 ${isScrolled ? "bg-white/90 dark:bg-[#131313] shadow-lg backdrop-blur-sm backdrop-opacity-15 rounded-xl w-2/3 mx-auto top-5 bg-opacity-40" : "backdrop-blur-sm"}`}>
+    <nav className={`sticky top-0 z-[999] h-20 flex justify-center items-center transition-all duration-300 border ${isScrolled ? "bg-white/70 dark:bg-[#131313]/70 shadow-lg backdrop-blur-md rounded-xl w-2/3 mx-auto top-5 border-gray-400/60 dark:border-gray-700" : "backdrop-blur-sm border-transparent"}`}>
       <div className="flex justify-between items-center w-full max-w-[1300px] mx-auto px-6 md:px-12">
         <a href="/" id="navbar__logo" className="text-[24px] sm:text-[28px] md:text-[32px] text-gray-900 dark:text-white flex items-center cursor-pointer">
           <i className="fas fa-gem mr-2"></i>JH
