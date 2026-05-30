@@ -3,9 +3,17 @@
 import { useEffect, useState } from 'react';
 import { useTheme } from '@/context/ThemeContext';
 
+const navItems = [
+  { label: 'About', href: '#aboutpage', sectionId: 'aboutpage' },
+  { label: 'Skills', href: '#skills', sectionId: 'skills' },
+  { label: 'Projects', href: '#projects', sectionId: 'projects' },
+  { label: 'Contact', href: '#contact', sectionId: 'contact' },
+];
+
 export function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState('');
   const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
@@ -19,6 +27,26 @@ export function NavBar() {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const sectionIds = navItems.map((item) => item.sectionId);
+    const observers: IntersectionObserver[] = [];
+
+    sectionIds.forEach((id) => {
+      const el = document.getElementById(id);
+      if (!el) return;
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) setActiveSection(id);
+        },
+        { threshold: 0.5 }
+      );
+      observer.observe(el);
+      observers.push(observer);
+    });
+
+    return () => observers.forEach((o) => o.disconnect());
   }, []);
 
   const toggleMenu = () => {
@@ -54,21 +82,18 @@ export function NavBar() {
           </div>
         </div>
         <ul className={`flex-col items-center list-none text-center absolute top-20 left-0 w-full bg-white dark:bg-[#131313] md:static md:flex md:flex-row md:bg-transparent md:dark:bg-transparent md:w-auto transition-all duration-300 ease-in-out ${isMenuOpen ? 'flex' : 'hidden'}`}>
-          <li className="h-20">
-            <a href="#aboutpage" className="text-gray-900 dark:text-white flex items-center justify-center px-2 sm:px-4 h-full hover:text-[#f77062] dark:hover:text-[#f77062] transition-all duration-300">About</a>
-          </li>
-          <li className="h-20">
-            <a href="#skills" className="text-gray-900 dark:text-white flex items-center justify-center px-2 sm:px-4 h-full hover:text-[#f77062] dark:hover:text-[#f77062] transition-all duration-300">Skills</a>
-          </li>
-          <li className="h-20">
-            <a href="#projects" className="text-gray-900 dark:text-white flex items-center justify-center px-2 sm:px-4 h-full hover:text-[#f77062] dark:hover:text-[#f77062] transition-all duration-300">Projects</a>
-          </li>
-          <li className="h-20">
-            <a href="#contact" className="text-gray-900 dark:text-white flex items-center justify-center px-2 sm:px-4 h-full hover:text-[#f77062] dark:hover:text-[#f77062] transition-all duration-300">Contact</a>
-          </li>
-          <li className="h-20">
-            <a href="/Resume.pdf" className="text-gray-900 dark:text-white flex items-center justify-center px-2 sm:px-4 h-full hover:text-[#f77062] dark:hover:text-[#f77062] transition-all duration-300" target='_blank' rel='noopener noreferrer'>CV</a>
-          </li>
+          {navItems.map((item) => (
+            <li key={item.sectionId} className="h-20">
+              <a
+                href={item.href}
+                className={`flex items-center justify-center px-2 sm:px-4 h-full transition-colors duration-300 hover:text-[#f77062] dark:hover:text-[#f77062] ${activeSection === item.sectionId ? 'text-[#f77062] dark:text-[#f77062]' : 'text-gray-900 dark:text-white'}`}
+              >
+                <span className={`border-b-2 transition-colors duration-300 ${activeSection === item.sectionId ? 'border-[#f77062]' : 'border-transparent'}`}>
+                  {item.label}
+                </span>
+              </a>
+            </li>
+          ))}
           <li className="h-20 hidden md:flex items-center pl-2">
             <button
               onClick={toggleTheme}
