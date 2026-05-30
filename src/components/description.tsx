@@ -38,11 +38,13 @@ export function Description() {
               </div>
             </div>
             <div className="flex justify-center mt-8 md:mt-0 md:col-span-1 pb-4">
-              <img
-                src="/images/jericho.jpg"
-                alt="Personal Photo"
-                className="w-64 h-100 rounded-xl object-cover object-[center top] scale-110 shadow-lg"
-              />
+              <div className="w-64 h-100 rounded-xl overflow-hidden shadow-lg">
+                <img
+                  src="/images/jericho.jpg"
+                  alt="Personal Photo"
+                  className="w-full h-full object-cover object-[center top] scale-110 transition-transform duration-300 ease-in-out hover:scale-125"
+                />
+              </div>
             </div>
           </div>
         </div>
