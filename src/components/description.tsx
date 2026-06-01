@@ -21,19 +21,11 @@ export function Description() {
                 Software Engineering Student
               </p>
               <div className="flex items-center">
-                <a className="pr-5" href="https://www.linkedin.com/in/jericho-huelar-112a04301/">
-                  <img
-                      src="/images/LinkedIn.png"
-                      alt="Linkedin Logo"
-                      className="h-10"
-                    />
-                </a>
-                <a href="https://github.com/jlhuelar">
-                  <img
-                      src="/images/github.png"
-                      alt="Github Logo"
-                      className="h-10"
-                    />
+                <a
+                  href="#contact"
+                  className="px-8 py-3 rounded-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 font-semibold text-base hover:bg-gray-700 dark:hover:bg-gray-200 transition-colors duration-200"
+                >
+                  Contact
                 </a>
               </div>
             </div>
