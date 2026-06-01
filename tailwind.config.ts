@@ -9,6 +9,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary:       'rgb(var(--color-primary) / <alpha-value>)',
+        secondary:     'rgb(var(--color-secondary) / <alpha-value>)',
+        muted:         'rgb(var(--color-muted) / <alpha-value>)',
+        base:          'rgb(var(--color-base) / <alpha-value>)',
+        surface:       'rgb(var(--color-surface) / <alpha-value>)',
+        'surface-nav': 'rgb(var(--color-surface-nav) / <alpha-value>)',
+        'hover-bg':    'rgb(var(--color-hover-bg) / <alpha-value>)',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

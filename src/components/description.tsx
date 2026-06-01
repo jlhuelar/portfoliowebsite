@@ -1,23 +1,23 @@
 
 export function Description() {
     return (
-      <div className="bg-white dark:bg-[#121212]">
+      <div className="bg-base">
         <div className="min-h-[calc(100vh-5rem)] flex items-center">
           <div className="grid items-center w-full max-w-[1100px] mx-auto px-8 md:grid-cols-3 gap-x-2 gap-y-4">
             <div className="md:col-span-2 text-center md:text-left pb-4">
-              <h2 className="mt-2 text-4xl pb-4 font-bold text-gray-900 dark:text-white md:text-5xl">
+              <h2 className="mt-2 text-4xl pb-4 font-bold text-primary md:text-5xl">
                 Hi 👋
               </h2>
-              <p className="text-4xl pb-4 font-bold text-gray-900 dark:text-white md:text-5xl">
+              <p className="text-4xl pb-4 font-bold text-primary md:text-5xl">
                 I&apos;m Jericho Huelar
               </p>
-              <p className="mt-2 text-lg pb-4 font-semibold text-gray-900 dark:text-white leading-relaxed md:text-xl">
+              <p className="mt-2 text-lg pb-4 font-semibold text-primary leading-relaxed md:text-xl">
                 📌 Calgary, AB
               </p>
-              <p className="text-lg font-semibold text-gray-900 dark:text-white leading-relaxed md:text-xl">
+              <p className="text-lg font-semibold text-primary leading-relaxed md:text-xl">
                 University of Calgary
               </p>
-              <p className="text-lg font-semibold pb-4 text-gray-900 dark:text-white leading-relaxed md:text-xl">
+              <p className="text-lg font-semibold pb-4 text-primary leading-relaxed md:text-xl">
                 Software Engineering Student
               </p>
               <div className="flex items-center">

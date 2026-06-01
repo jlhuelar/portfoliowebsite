@@ -54,16 +54,16 @@ export function NavBar() {
   };
 
   return (
-    <nav className={`sticky top-0 z-[999] h-20 flex justify-center items-center transition-all duration-300 border ${isScrolled ? "bg-white/70 dark:bg-[#131313]/70 shadow-lg backdrop-blur-md rounded-xl w-2/3 mx-auto top-5 border-gray-400/60 dark:border-gray-700" : "backdrop-blur-sm border-transparent"}`}>
+    <nav className={`sticky top-0 z-[999] h-20 flex justify-center items-center transition-all duration-300 border ${isScrolled ? "bg-surface-nav/70 shadow-lg backdrop-blur-md rounded-xl w-2/3 mx-auto top-5 border-gray-400/60 dark:border-gray-700" : "backdrop-blur-sm border-transparent"}`}>
       <div className="flex justify-between items-center w-full max-w-[1300px] mx-auto px-6 md:px-12">
-        <a href="/" id="navbar__logo" className="text-[24px] sm:text-[28px] md:text-[32px] text-gray-900 dark:text-white flex items-center cursor-pointer">
+        <a href="/" id="navbar__logo" className="text-[24px] sm:text-[28px] md:text-[32px] text-primary flex items-center cursor-pointer">
           <i className="fas fa-gem mr-2"></i>JH
         </a>
         <div className="flex items-center gap-3 md:hidden">
           <button
             onClick={toggleTheme}
             aria-label="Toggle theme"
-            className="p-2 rounded-full text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
+            className="p-2 rounded-full text-primary hover:bg-hover-bg transition-colors duration-200"
           >
             {theme === 'dark' ? (
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -76,19 +76,19 @@ export function NavBar() {
             )}
           </button>
           <div id="mobile-menu" onClick={toggleMenu} className="flex flex-col justify-between h-5 cursor-pointer">
-            <span className={`block w-6 h-[2px] bg-gray-900 dark:bg-white transition-transform ${isMenuOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>
-            <span className={`block w-6 h-[2px] bg-gray-900 dark:bg-white transition-opacity ${isMenuOpen ? 'opacity-0' : ''}`}></span>
-            <span className={`block w-6 h-[2px] bg-gray-900 dark:bg-white transition-transform ${isMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
+            <span className={`block w-6 h-[2px] bg-primary transition-transform ${isMenuOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>
+            <span className={`block w-6 h-[2px] bg-primary transition-opacity ${isMenuOpen ? 'opacity-0' : ''}`}></span>
+            <span className={`block w-6 h-[2px] bg-primary transition-transform ${isMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
           </div>
         </div>
-        <ul className={`flex-col items-center list-none text-center absolute top-20 left-0 w-full bg-white dark:bg-[#131313] md:static md:flex md:flex-row md:bg-transparent md:dark:bg-transparent md:w-auto transition-all duration-300 ease-in-out ${isMenuOpen ? 'flex' : 'hidden'}`}>
+        <ul className={`flex-col items-center list-none text-center absolute top-20 left-0 w-full bg-surface-nav md:static md:flex md:flex-row md:bg-transparent md:w-auto transition-all duration-300 ease-in-out ${isMenuOpen ? 'flex' : 'hidden'}`}>
           {navItems.map((item) => (
             <li key={item.sectionId} className="h-20">
               <a
                 href={item.href}
-                className={`flex items-center justify-center px-2 sm:px-4 h-full transition-colors duration-300 hover:text-gray-600 dark:hover:text-gray-400 ${activeSection === item.sectionId ? 'text-gray-600 dark:text-gray-400' : 'text-gray-900 dark:text-white'}`}
+                className={`flex items-center justify-center px-2 sm:px-4 h-full transition-colors duration-300 hover:text-secondary ${activeSection === item.sectionId ? 'text-secondary' : 'text-primary'}`}
               >
-                <span className={`border-b-2 transition-colors duration-300 ${activeSection === item.sectionId ? 'border-gray-600 dark:border-gray-400' : 'border-transparent'}`}>
+                <span className={`border-b-2 transition-colors duration-300 ${activeSection === item.sectionId ? 'border-secondary' : 'border-transparent'}`}>
                   {item.label}
                 </span>
               </a>
@@ -98,7 +98,7 @@ export function NavBar() {
             <button
               onClick={toggleTheme}
               aria-label="Toggle theme"
-              className="p-2 rounded-full text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
+              className="p-2 rounded-full text-primary hover:bg-hover-bg transition-colors duration-200"
             >
               {theme === 'dark' ? (
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">

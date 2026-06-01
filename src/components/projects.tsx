@@ -12,13 +12,13 @@ interface ProjectCardProps {
 
 function ProjectCard({ title, year, languages, description, imageSrc }: ProjectCardProps) {
   return (
-    <div className="w-full lg:w-[45%] bg-gray-100 dark:bg-[#222323] rounded-lg flex flex-col p-4 pb-4">
+    <div className="w-full lg:w-[45%] bg-surface rounded-lg flex flex-col p-4 pb-4">
       <h1 className="text-xl md:text-2xl font-bold italic bg-gradient-to-r from-[#C8AA6E] to-[#1D428A] bg-clip-text text-transparent mb-4 flex justify-between items-center">
         <span>{title}</span>
-        <span className="text-lg text-gray-900 dark:text-white">{year}</span>
+        <span className="text-lg text-primary">{year}</span>
       </h1>
 
-      <div className="bg-gray-100 dark:bg-[#222323] w-full mb-4 rounded-lg">
+      <div className="bg-surface w-full mb-4 rounded-lg">
         <img
           src={imageSrc}
           alt={title}
@@ -26,7 +26,7 @@ function ProjectCard({ title, year, languages, description, imageSrc }: ProjectC
         />
       </div>
 
-      <div className="text-gray-900 dark:text-white mt-4">
+      <div className="text-primary mt-4">
         <p className="font-bold text-lg">Tech Stack: <span className="font-normal">{languages.join(', ')}</span></p>
         <p className="mt-2">{description}</p>
       </div>
@@ -83,7 +83,7 @@ export function Projects() {
   ];
 
   return (
-    <div className="bg-white dark:bg-[#121212]" id="projects">
+    <div className="bg-base" id="projects">
       <div className="mx-auto max-w-[1300px] h-auto p-4 flex flex-col justify-center items-center">
         <ProjectsGrid>
           {projects.map((project, index) => (
