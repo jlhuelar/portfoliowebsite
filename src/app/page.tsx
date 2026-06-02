@@ -11,7 +11,7 @@ export default function Home() {
     <div className="bg-white dark:bg-[#121212]">
       <NavBar/>
       <Description/>
-      <div className="overflow-auto overflow-x-hidden container mx-auto flex-1 p-10">
+      <div className="overflow-auto overflow-x-hidden container mx-auto flex-1 p-5">
         <SkillsTitle/>
         <Skills/>
         <ProjectsTitle/>
