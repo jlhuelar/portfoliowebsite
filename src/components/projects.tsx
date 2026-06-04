@@ -8,9 +8,10 @@ interface ProjectCardProps {
   languages: string[];
   description: string;
   imageSrc: string;
+  githubUrl: string;
 }
 
-function ProjectCard({ title, year, languages, description, imageSrc }: ProjectCardProps) {
+function ProjectCard({ title, year, languages, description, imageSrc, githubUrl }: ProjectCardProps) {
   return (
     <div className="w-full lg:w-[45%] bg-[#4d6372] dark:bg-surface rounded-lg flex flex-col p-4 pb-4">
       <h1 className="text-xl md:text-2xl font-bold italic mb-4 flex justify-between items-center text-primary">
@@ -30,6 +31,12 @@ function ProjectCard({ title, year, languages, description, imageSrc }: ProjectC
         <p className="font-bold text-lg">Tech Stack: <span className="font-normal">{languages.join(', ')}</span></p>
         <p className="mt-2">{description}</p>
       </div>
+
+      <div className="flex justify-center mt-auto pt-4">
+        <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+          <img src="/images/github.png" alt="GitHub" className="w-8 h-8 opacity-80 hover:opacity-100 transition-opacity" />
+        </a>
+      </div>
     </div>
   );
 }
@@ -40,6 +47,7 @@ interface Project {
   languages: string[];
   description: string;
   imageSrc: string;
+  githubUrl: string;
 }
 
 function ProjectsGrid({ children }: { children: React.ReactNode }) {
@@ -57,28 +65,32 @@ export function Projects() {
       year: "2025",
       languages: ['Next.JS, Typescript, Neon PostgreSQL, Drizzle ORM, Cloudflare R2, AWS'],
       description: "Developed a Linux-themed daily puzzle game inspired by Wordle where users complete terminal based challenges using real Linux commands, with scoring based on golf-style \"par\" system.",
-      imageSrc: "/images/Commandle.png"
+      imageSrc: "/images/Commandle.png",
+      githubUrl: "https://github.com/your-username/commandle"  // <-- replace with your repo URL
     },
     {
       title: "NFL Spread Predictor",
       year: "2025",
       languages: ['Python, Pandas, Scikit-Learn'],
       description: "Developed an NFL spread predictor using XGBoost and Random Forest with feature importance analysis, achieving 65% balanced accuracy against Vegas lines on 2024 validation data.",
-      imageSrc: "/images/NFLSpreadPredictor.png"
+      imageSrc: "/images/NFLSpreadPredictor.png",
+      githubUrl: "https://github.com/your-username/nfl-spread-predictor"  // <-- replace with your repo URL
     },
     {
       title: "BrokeNoMo",
       year: "2025",
       languages: ['Next.JS, Python, Flask'],
       description: "For a school project about software architecture in a team of 6, created microservices finance app for beginner investors. Features include through real-time stock prices, trending news, and, historical market charts through the use of Flask API calls and personalized AI financial advisor chatbot through Google Gemini 2.0 LLM.",
-      imageSrc: "/images/BrokeNoMo.png"
+      imageSrc: "/images/BrokeNoMo.png",
+      githubUrl: "https://github.com/your-username/brokeno-mo"  // <-- replace with your repo URL
     },
     {
       title: "Nullus",
       year: "2025",
       languages: ['Next.JS, Typescript'],
       description: "Company website that I co-founded with friends as a student-led software web development team for individuals, clubs, and businesses.",
-      imageSrc: "/images/Nullus.png"
+      imageSrc: "/images/Nullus.png",
+      githubUrl: "https://github.com/your-username/nullus"  // <-- replace with your repo URL
     },
   ];
 
@@ -94,6 +106,7 @@ export function Projects() {
               languages={project.languages}
               description={project.description}
               imageSrc={project.imageSrc}
+              githubUrl={project.githubUrl}
             />
           ))}
         </ProjectsGrid>
