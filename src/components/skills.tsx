@@ -10,27 +10,27 @@ export function Skills() {
         <div className="w-full max-w-[1300px] p-4 flex flex-col items-center">
         <h2 className="text-2xl font-bold italic mt-4 text-primary">Languages</h2>
         <div className="flex flex-wrap justify-center mt-4 gap-2 pb-4">
-            <SkillCard name="HTML" imageSrc="/images/html.png" customClass="bg-[#e1cb8a]" />
-            <SkillCard name="CSS" imageSrc="/images/css.png" customClass="bg-[#e1cb8a]" />
-            <SkillCard name="JavaScript" imageSrc="/images/javascript-logo.png" customClass="bg-[#e1cb8a]" />
-            <SkillCard name="TypeScript" imageSrc="/images/TypeScript.png" customClass="bg-[#e1cb8a]" />
-            <SkillCard name="SQL" imageSrc="/images/SQL.png" customClass="bg-[#e1cb8a]" />
-            <SkillCard name="Python" imageSrc="/images/Python.png" customClass="bg-[#e1cb8a]" />
-            <SkillCard name="Java" imageSrc="/images/java.png" customClass="bg-[#e1cb8a]" />
-            <SkillCard name="C" imageSrc="/images/C_Logo.png" customClass="bg-[#e1cb8a]" />
-            <SkillCard name="C++" imageSrc="/images/C++.png" customClass="bg-[#e1cb8a]" />
+            <SkillCard name="HTML" imageSrc="/images/html.png" customClass="bg-[#4d6372]" />
+            <SkillCard name="CSS" imageSrc="/images/css.png" customClass="bg-[#4d6372]" />
+            <SkillCard name="JavaScript" imageSrc="/images/javascript-logo.png" customClass="bg-[#4d6372]" />
+            <SkillCard name="TypeScript" imageSrc="/images/TypeScript.png" customClass="bg-[#4d6372]" />
+            <SkillCard name="SQL" imageSrc="/images/SQL.png" customClass="bg-[#4d6372]" />
+            <SkillCard name="Python" imageSrc="/images/Python.png" customClass="bg-[#4d6372]" />
+            <SkillCard name="Java" imageSrc="/images/java.png" customClass="bg-[#4d6372]" />
+            <SkillCard name="C" imageSrc="/images/C_Logo.png" customClass="bg-[#4d6372]" />
+            <SkillCard name="C++" imageSrc="/images/C++.png" customClass="bg-[#4d6372]" />
           </div>
 
           <h2 className="text-2xl font-bold italic mt-4 text-primary">Libraries/Frameworks</h2>
           <div className="flex flex-wrap justify-center mt-4 gap-2 pb-4">
-            <SkillCard name="React" imageSrc="/images/React.png" customClass="bg-[#3ddae1]"  />
-            <SkillCard name="NextJs" imageSrc="/images/Nextjs.png" customClass="bg-[#3ddae1]" />
-            <SkillCard name="NodeJS" imageSrc="/images/nodejs.png" customClass="bg-[#3ddae1]" />
-            <SkillCard name="TailwindCSS" imageSrc="/images/Tailwind.png" customClass="bg-[#3ddae1]" />
-            <SkillCard name="D3" imageSrc="/images/d3.png" customClass="bg-[#3ddae1]" />
-            <SkillCard name="Numpy" imageSrc="/images/Numpy.png" customClass="bg-[#3ddae1]" />
-            <SkillCard name="JUnit" imageSrc="/images/JUNIT.png" customClass="bg-[#3ddae1]" />
-            <SkillCard name="Swing" imageSrc="/images/JavaSwing.png" customClass="bg-[#3ddae1]" />
+            <SkillCard name="React" imageSrc="/images/React.png" customClass="bg-[#4d6372]"  />
+            <SkillCard name="NextJs" imageSrc="/images/Nextjs.png" customClass="bg-[#4d6372]" />
+            <SkillCard name="NodeJS" imageSrc="/images/nodejs.png" customClass="bg-[#4d6372]" />
+            <SkillCard name="TailwindCSS" imageSrc="/images/Tailwind.png" customClass="bg-[#4d6372]" />
+            <SkillCard name="D3" imageSrc="/images/d3.png" customClass="bg-[#4d6372]" />
+            <SkillCard name="Numpy" imageSrc="/images/Numpy.png" customClass="bg-[#4d6372]" />
+            <SkillCard name="JUnit" imageSrc="/images/JUNIT.png" customClass="bg-[#4d6372]" />
+            <SkillCard name="Swing" imageSrc="/images/JavaSwing.png" customClass="bg-[#4d6372]" />
            
 
 
