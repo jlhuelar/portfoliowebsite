@@ -8,7 +8,7 @@ export function Skills() {
     <div className="pb-4" id="skills">
       <div className="flex justify-center items-center pb-8">
         <div className="w-full max-w-[1300px] p-4 flex flex-col items-center">
-        <h2 className="text-2xl bg-clip-text text-transparent bg-gradient-to-r from-[#C8AA6E] to-[#1D428A] font-bold italic mt-4">Languages</h2>
+        <h2 className="text-2xl font-bold italic mt-4 text-primary">Languages</h2>
         <div className="flex flex-wrap justify-center mt-4 gap-2 pb-4">
             <SkillCard name="HTML" imageSrc="/images/html.png" customClass="bg-[#e1cb8a]" />
             <SkillCard name="CSS" imageSrc="/images/css.png" customClass="bg-[#e1cb8a]" />
@@ -21,7 +21,7 @@ export function Skills() {
             <SkillCard name="C++" imageSrc="/images/C++.png" customClass="bg-[#e1cb8a]" />
           </div>
 
-          <h2 className="text-2xl bg-clip-text text-transparent bg-gradient-to-r from-[#C8AA6E] to-[#1D428A] font-bold italic mt-4">Libraries/Frameworks</h2>
+          <h2 className="text-2xl font-bold italic mt-4 text-primary">Libraries/Frameworks</h2>
           <div className="flex flex-wrap justify-center mt-4 gap-2 pb-4">
             <SkillCard name="React" imageSrc="/images/React.png" customClass="bg-[#3ddae1]"  />
             <SkillCard name="NextJs" imageSrc="/images/Nextjs.png" customClass="bg-[#3ddae1]" />
@@ -38,7 +38,7 @@ export function Skills() {
 
           </div>
 
-          <h2 className="text-2xl bg-clip-text text-transparent bg-gradient-to-r from-[#C8AA6E] to-[#1D428A] font-bold italic mt-4">Software Programs</h2>
+          <h2 className="text-2xl font-bold italic mt-4 text-primary">Software Programs</h2>
           <div className="flex flex-wrap justify-center mt-4 gap-2">
             <SkillCard name="Bash" imageSrc="/images/Bash.png" customClass="bg-[#4d6372]" />
             <SkillCard name="Linux" imageSrc="/images/Linux.png" customClass="bg-[#4d6372]" />

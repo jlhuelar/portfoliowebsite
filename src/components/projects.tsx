@@ -12,8 +12,8 @@ interface ProjectCardProps {
 
 function ProjectCard({ title, year, languages, description, imageSrc }: ProjectCardProps) {
   return (
-    <div className="w-full lg:w-[45%] bg-surface rounded-lg flex flex-col p-4 pb-4">
-      <h1 className="text-xl md:text-2xl font-bold italic bg-gradient-to-r from-[#C8AA6E] to-[#1D428A] bg-clip-text text-transparent mb-4 flex justify-between items-center">
+    <div className="w-full lg:w-[45%] bg-[#4d6372] dark:bg-surface rounded-lg flex flex-col p-4 pb-4">
+      <h1 className="text-xl md:text-2xl font-bold italic mb-4 flex justify-between items-center text-primary">
         <span>{title}</span>
         <span className="text-lg text-primary">{year}</span>
       </h1>
