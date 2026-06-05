@@ -40,7 +40,7 @@ export function Description() {
             </div>
           </div>
         </div>
-        <div className="px-4 pb-10">
+        {/* <div className="px-4 pb-10">
           <div className="grid w-full max-w-[1300px] mx-auto px-6 md:grid-cols-3 gap-4">
             <iframe
               data-testid="embed-iframe"
@@ -70,7 +70,7 @@ export function Description() {
               loading="lazy">
             </iframe>
           </div>
-        </div>
+        </div> */}
       </div>
     );
   }
