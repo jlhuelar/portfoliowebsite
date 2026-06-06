@@ -12,7 +12,7 @@ export function Footer() {
           </h1>
         </div>
         <div className="mt-4 flex flex-col items-center space-y-3">
-          <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" className="w-64 flex items-center gap-3 px-6 py-3 rounded-full bg-primary text-[rgb(var(--color-base))] hover:bg-secondary transition-colors duration-200">
+          <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" className="w-64 flex items-center gap-3 px-6 py-3 rounded-full bg-[#4d6372] text-[rgb(var(--color-base))] hover:bg-secondary transition-colors duration-200">
             <img src="/images/cv.png" alt="CV" className="h-6 w-6 object-contain flex-shrink-0" />
             <div className="flex flex-col text-left flex-1">
               <span className="font-semibold text-sm leading-tight">CV</span>
@@ -20,7 +20,7 @@ export function Footer() {
             </div>
             <img src="/images/download.png" alt="Download" className="h-6 w-6 object-contain flex-shrink-0" />
           </a>
-          <a href="https://www.linkedin.com/in/jericho-huelar" target="_blank" rel="noopener noreferrer" className="w-64 flex items-center gap-3 px-6 py-3 rounded-full bg-primary text-[rgb(var(--color-base))] hover:bg-secondary transition-colors duration-200">
+          <a href="https://www.linkedin.com/in/jericho-huelar" target="_blank" rel="noopener noreferrer" className="w-64 flex items-center gap-3 px-6 py-3 rounded-full bg-[#4d6372] text-[rgb(var(--color-base))] hover:bg-secondary transition-colors duration-200">
             <img src="/images/LinkedIn.png" alt="LinkedIn" className="h-6 w-6 object-contain flex-shrink-0 scale-125" />
             <div className="flex flex-col text-left flex-1">
               <span className="font-semibold text-sm leading-tight">LinkedIn</span>
@@ -28,7 +28,7 @@ export function Footer() {
             </div>
             <img src="/images/rightArrow.png" alt="Go" className="h-6 w-6 object-contain flex-shrink-0" />
           </a>
-          <a href="https://github.com/jlhuelar" target="_blank" rel="noopener noreferrer" className="w-64 flex items-center gap-3 px-6 py-3 rounded-full bg-primary text-[rgb(var(--color-base))] hover:bg-secondary transition-colors duration-200">
+          <a href="https://github.com/jlhuelar" target="_blank" rel="noopener noreferrer" className="w-64 flex items-center gap-3 px-6 py-3 rounded-full bg-[#4d6372] text-[rgb(var(--color-base))] hover:bg-secondary transition-colors duration-200">
             <img src="/images/github.png" alt="GitHub" className="h-6 w-6 object-contain flex-shrink-0" />
             <div className="flex flex-col text-left flex-1">
               <span className="font-semibold text-sm leading-tight">GitHub</span>
@@ -36,7 +36,7 @@ export function Footer() {
             </div>
             <img src="/images/rightArrow.png" alt="Go" className="h-6 w-6 object-contain flex-shrink-0" />
           </a>
-          <a href="mailto:jlhuelar@outlook.com" className="w-64 flex items-center gap-3 px-6 py-3 rounded-full bg-primary text-[rgb(var(--color-base))] hover:bg-secondary transition-colors duration-200">
+          <a href="mailto:jlhuelar@outlook.com" className="w-64 flex items-center gap-3 px-6 py-3 rounded-full bg-[#4d6372] text-[rgb(var(--color-base))] hover:bg-secondary transition-colors duration-200">
             <img src="/images/email.png" alt="Email" className="h-6 w-6 object-contain flex-shrink-0" />
             <div className="flex flex-col text-left flex-1">
               <span className="font-semibold text-sm leading-tight">Email</span>
